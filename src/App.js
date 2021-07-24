@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import styles from './App.module.scss';
+import BarItem from './BarItem';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles.layout}>
+      <div className={styles.content}>
+        <div className={styles.itBar}>
+          <BarItem />
+        </div>
+          <div className={styles.bar}>
+            <div className={styles.btBar}></div>
+          </div>
+      </div>
+      <div className={styles.scroll}>
+        <div className={styles.thump}>
+        </div>
+      </div>
     </div>
   );
 }

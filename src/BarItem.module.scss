@@ -1,0 +1,164 @@
+.barItem {
+    position: relative;
+    display: block;
+    overflow-x: hidden;
+
+    &:hover {
+        .imageContent {
+            height: 0px;
+            width: 340px;
+
+
+            img {
+                width: 160px;
+                height: 120px;
+            }
+
+            .describe {
+                left: 200px;
+                top: 0px;
+                font-weight: 300;
+                margin: 0px;
+
+                .title {
+                    font-size: 14px;
+                }
+            }
+
+            .content {
+                top: 60px;
+                font-weight: 200;
+                font-size: 14px;
+                opacity: 1;
+                margin: 0px;
+            }
+        }
+
+        .barControl {
+            height: 220px;
+        }
+
+
+        .doc {
+            left: 0;
+        }
+
+        .i7 {
+            height: 15px!important;
+        }
+
+        .i8 {
+            height: 20px;
+        }
+
+        .i9 {
+            height: 40px;
+        }
+
+        .i10 {
+            height: 70px;
+        }
+
+        .i13 {
+            height: 25px;
+        }
+
+        .i12 {
+            height: 35px;
+        }
+
+        .i11 {
+            height: 55px;
+        }
+
+        .im {
+            height: 220px;
+        }
+
+    }
+
+    .contentImg {
+        width: 100px;
+        height: 100px;
+    }
+
+    .imageContent {
+        width: 140px;
+        font-size: 12px;
+        font-weight: 200;
+        position: relative;
+        height: 80px;
+        transition-duration: 250ms;
+
+        .describe {
+            position: absolute;
+            top: 60px;
+            left: 0px;
+            transition-duration: 250ms;
+        }
+
+        .content {
+            position: absolute;
+            top: 70px;
+            left: 0px;
+            opacity: 0;
+            transition-delay: 250ms;
+            transition-duration: 250ms;
+        }
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 10px;
+            width: 80px;
+            height: 60px;
+            transition-duration: 250ms;
+        }
+    }
+
+    .barControl {
+        display: table;
+        position: relative;
+        height: 100px;
+    }
+
+    .doc {
+        display: table-row;
+        vertical-align: bottom;
+        transition: 250ms;
+        height: inherit;
+        left: -180px;
+        position: relative;
+    }
+
+    .mainDoc {
+        height: 80px;
+        display: table-cell;
+        margin: 5px 10px;
+        vertical-align: bottom;
+    }
+
+    .subDoc {
+        height: 80px;
+        width: 1px;
+        display: table-cell;
+        vertical-align: bottom;
+        color: black;
+    }
+
+    .chopstick {
+        margin: 2px 5px;
+        width: 1px;
+        transition: 250ms;
+        height: 10px;
+        background-color: gray;
+    }
+
+    .im {
+        height: 30px;
+        width: 4px;
+        background-image: linear-gradient(to bottom, red, blue);
+    }
+
+}

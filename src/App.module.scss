@@ -1,0 +1,39 @@
+
+.content {
+  display: block;
+  padding: 20px;
+  display: table;
+  overflow: scroll;
+}
+
+.layout {
+  width: 100vw;
+  overflow-x: scroll;
+  display: block;
+  position: relative;
+}
+
+
+.bar {
+  display: table-row;
+  vertical-align: bottom;
+  height: 20px;
+
+  .btBar {
+    border-radius: 5px;
+    width: 120vw;
+    height: 10px;
+    vertical-align: bottom;
+    position: absolute;
+    background-image: linear-gradient(to right, pink, purple);
+    display: table-row;
+  }
+}
+
+::-webkit-scrollbar-track-piece {
+  width: 5px;
+}
+
+.itBar {
+  display: table-row;
+}
